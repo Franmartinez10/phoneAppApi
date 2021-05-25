@@ -59,7 +59,7 @@ app.post('/phones', (request,response) =>{
                 request.body.ram];
 /*     let sql='INSERT INTO `phones` (`name`,`manufacturer`,`description`,`color`,`price`, `imageFileName`,`screen`,`processor`,`ram`) VALUES (?,?,?,?,?,?,?,?,?)';
  */    
-    let sql=' INSERT INTO `phones`.`phones` (`name`, `manufacturer`, `description`, `color`, `price`, `screen`, `processor`, `ram`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)';
+    let sql=' INSERT INTO `phones`.`phones` (`name`, `manufacturer`, `description`, `color`, `price`, `imageFileName`, `screen`, `processor`, `ram`) VALUES (?, ?, ?, ?, ?, ?, ?, ?,?)';
     ;
 
         connection.query(sql,params,(err,res)=>{
